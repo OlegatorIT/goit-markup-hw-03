@@ -12,6 +12,21 @@
   --white-color-text: #ffffff;
   --black-color-text: #000000;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
 
 body {
   background: var(--primary-background-color);
@@ -19,25 +34,54 @@ body {
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
   font-size: 14px;
+  margin: 0;
 }
 .list {
   list-style: none;
 }
 .button {
   font-family: inherit;
+  border: 1px solid transparent;
 }
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px red solid;
+}
+
+
 
 /* header */
 
 .header {
   background: var(--header-background-color);
+ padding-top: 24px;
+ padding-bottom: 25px;
 }
+
+.header-container{
+  display: flex; 
+  align-items: center;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.heder-navigation{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
 .icon {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  
 }
 .icon-web {
   color: var(--active-color);
@@ -49,11 +93,19 @@ body {
   color: var(--white-color-text);
 }
 
-.header .nav-list .active{
+.header .nav-list .active {
   color: var(--active-color);
 }
 
 /* navigation */
+
+.nav-list {
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
+  
+  
+}
 
 .nav-list .link {
   font-weight: 500;
@@ -68,9 +120,13 @@ body {
   color: var(--active-color);
 }
 
+.nav-contact{
+display: flex;
+gap: 50px;
+}
+
 .nav-contact .contact {
   font-weight: 500;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -86,16 +142,19 @@ body {
 
 .hero {
   background: #2f303a;
+  text-align: center;
+  height: 600px;
 }
 
 .hero-titel {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color-text);
+
+  padding-top: 200px;
 }
 
 .hero-button {
@@ -104,16 +163,43 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color-text);
-  padding: 10px 32px 10px 32px;
-  background: #2196f3;
+  background: var(--active-color);
   cursor: pointer;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
 }
 
 .hero-button:focus {
-  color: none ;
+  color: none;
 }
 
 /* section qualities our company  */
+
+.title-invisible{
+       position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+.width-column {
+  width: 270px;
+}
+
+.qualities-conteiner-text{
+  display: flex;
+  column-gap: 30px;
+  padding: 94px 0;
+}
 
 .section-qualities .title {
   font-size: 14px;
@@ -123,7 +209,8 @@ body {
 }
 
 .section-qualities .text {
-   line-height: 1.71;
+  line-height: 1.71;
+  margin-top: 10px;
 }
 
 .section-title {
@@ -133,32 +220,69 @@ body {
   color: var(--secondary-text-color);
 }
 
+.qualities-pictures{
+  display: flex;
+  gap: 30px;
+ padding-top: 50px;
+ padding-bottom: 94px;
+}
+
 /* our-team */
+
+.conteiner-section-our-team{
+  padding: 94px 0 ;
+}
+
+.section-our-team .item{
+  background: #FFFFFF;
+  text-align: center;
+  padding-bottom: 30px;
+
+}
+
+.section-our-team .list{
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+}
 
 .section-our-team .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-text-color);
+
+  padding-top: 30px;
+  
 }
 
 .section-our-team .text {
   font-size: 16px;
   line-height: 1.18;
+
+  padding-top: 10px;
 }
 
 /* footer */
 
+.footer-conteiner{
+  padding: 60px 0;
+}
+
 .footer-address {
   color: var(--white-color-text);
-   line-height: 1.71;
+  line-height: 1.71;
   font-style: normal;
+
+  padding-top: 20px;
 }
 
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-   line-height: 1.71;
+  line-height: 1.71;
+
+  padding-top: 9px;
 }
 
 .footer-contact:focus {
@@ -180,7 +304,6 @@ body {
   color: var(--secondary-text-color);
   background: var(--filrer-button-background-color);
   cursor: pointer;
-
 }
 
 .list-filter .button-filter:hover,
@@ -190,7 +313,7 @@ body {
 }
 
 /* <!-- examples of our works --> */
-.examples-list .link{
+.examples-list .link {
   text-decoration: none;
 }
 .examples-list .examples-title {
@@ -205,5 +328,3 @@ body {
   line-height: 1.87;
   color: var(--primary-text-color);
 }
-
-

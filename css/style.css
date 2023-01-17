@@ -160,7 +160,7 @@ body {
   padding-bottom: 200px;
 }
 
-.hero-titel {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -195,7 +195,7 @@ body {
 
 /* section qualities our company  */
 
-.qualities-container-text {
+.qualities-list {
   display: flex;
   gap: 30px;
 }
@@ -204,14 +204,14 @@ body {
   padding: 94px 0;
 }
 
-.section-qualities .title {
+.qualities-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
 
-.section-qualities .text {
+.qualities-text {
   line-height: 1.71;
   margin-top: 10px;
 }
@@ -234,7 +234,7 @@ body {
   justify-content: center;
 }
 
-.image-qulities {
+.image-qualities {
   display: block;
 }
 
@@ -245,7 +245,7 @@ body {
   background: var(--our-team-background-color);
 }
 
-.section-our-team .item {
+.our-team-item {
   background: var(--primary-background-color);
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -253,7 +253,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-our-team .list {
+.our-team-list {
   display: flex;
   gap: 30px;
   margin-top: 50px;
@@ -262,17 +262,14 @@ body {
 }
 
 
-
-
-
-.section-our-team .title {
+.our-team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-text-color);
 }
 
-.section-our-team .text {
+.our-team-text {
   font-size: 16px;
   line-height: 1.18;
 
@@ -283,7 +280,7 @@ body {
   display: block;
 }
 
-.our-team-title-and-text {
+.our-team-box {
   padding: 30px 0;
 
 }
@@ -296,18 +293,9 @@ body {
 }
 
 
-.address .item:not(:first-child) {
+.footer-item:not(:first-child) {
   margin-top: 9px;
 }
-
-
-/* alternative */
-
-/* .footer-box{
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-} */
 
 
 
@@ -340,7 +328,7 @@ body {
 
 /* filter */
 
-.section-filter-page-portfolio {
+.portfolio {
   padding: 94px 0;
 }
 
@@ -350,7 +338,7 @@ body {
   justify-content: center;
 }
 
-.list-filter .button-filter {
+.button-filter {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -363,8 +351,8 @@ body {
 
 
 
-.list-filter .button-filter:hover,
-.list-filter .button-filter:focus {
+.button-filter:hover,
+.button-filter:focus {
   background-color: var(--active-color);
   color: var(--white-color-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -379,23 +367,21 @@ body {
   gap: 30px;
 }
 
-
-
 .examples-list img {
   display: block;
 }
 
-.examples-list .link {
+.examples-link {
   text-decoration: none;
 }
 
-.box-examples-title-and-text {
+.examples-box {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
 }
 
-.examples-list .examples-title {
+.examples-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -404,7 +390,7 @@ body {
 
 }
 
-.examples-list .examples-text {
+.examples-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);

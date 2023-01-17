@@ -195,6 +195,8 @@ body {
 
 /* section qualities our company  */
 
+
+
 .qualities-list {
   display: flex;
   gap: 30px;
@@ -386,8 +388,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
-
-
 }
 
 .examples-text {
